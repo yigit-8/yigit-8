@@ -21,14 +21,22 @@ Learning MLOps by building end to end: model training, experiment tracking, depl
 
 ## Projects
 
+### MLOps
+
 | Project | What it does | Stack |
 |---|---|---|
 | [**churn-prediction**](https://github.com/yigit-8/churn-prediction) · [live demo](https://yliman-churn-prediction.hf.space/docs) | Churn API with model registry, drift + Prometheus monitoring, and Kubernetes manifests | XGBoost, MLflow, Evidently, Prometheus, Docker, K8s |
-| [**gpu-scheduler**](https://github.com/yigit-8/gpu-scheduler) | Fair-share GPU cluster scheduler with EASY backfill and starvation-free job aging | Python, FastAPI, Prometheus, Grafana, Docker |
 | [**price-prediction**](https://github.com/yigit-8/price-prediction) | California house-price regression API | XGBoost, MLflow, Evidently, FastAPI, Docker |
 | [**anomaly-detection**](https://github.com/yigit-8/anomaly-detection) | Unsupervised sensor anomaly detection | IsolationForest, MLflow, Evidently, FastAPI, Docker |
 | [**airflow-ml-pipeline**](https://github.com/yigit-8/airflow-ml-pipeline) | Scheduled training pipeline with drift-triggered retraining | Airflow, MLflow, Docker Compose |
 | [**image-classifier**](https://github.com/yigit-8/image-classifier) | CIFAR-10 CNN served over an API | PyTorch, MLflow, FastAPI, Docker |
 | [**document-qa**](https://github.com/yigit-8/document-qa) | RAG document Q&A with source citations and retrieval evaluation | LangChain, ChromaDB, Claude, FastAPI, Docker |
+
+### Infrastructure
+
+| Project | What it does | Stack |
+|---|---|---|
+| [**gpu-scheduler**](https://github.com/yigit-8/gpu-scheduler) | Fair-share GPU cluster scheduler with EASY backfill and starvation-free job aging | Python, FastAPI, Prometheus, Grafana, Docker |
+| [**llm-inference-server**](https://github.com/yigit-8/llm-inference-server) | Continuous-batching inference server with iteration-level scheduling and TTFT/throughput metrics | PyTorch, Transformers, FastAPI, Prometheus, Docker |
 
 Every project ships with tests, a Dockerfile, and a GitHub Actions pipeline.
