@@ -1,4 +1,4 @@
-# yigit-8
+# Yigit Liman
 
 **AI Master's Student @ FAU · IT Specialist @ TUM**
 
