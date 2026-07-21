@@ -31,6 +31,7 @@ Learning MLOps by building end to end: model training, experiment tracking, depl
 | [**airflow-ml-pipeline**](https://github.com/yigit-8/airflow-ml-pipeline) | Scheduled training pipeline with drift-triggered retraining | Airflow, MLflow, Docker Compose |
 | [**image-classifier**](https://github.com/yigit-8/image-classifier) | CIFAR-10 CNN served over an API | PyTorch, MLflow, FastAPI, Docker |
 | [**document-qa**](https://github.com/yigit-8/document-qa) | RAG document Q&A with source citations and retrieval evaluation | LangChain, ChromaDB, Claude, FastAPI, Docker |
+| [**mlops-sentiment-pipeline**](https://github.com/yigit-8/mlops-sentiment-pipeline) | Sentiment pipeline with experiment tracking, drift detection and a two-service Compose stack | DistilBERT, MLflow, Evidently, FastAPI, Docker Compose |
 
 ### Infrastructure
 
