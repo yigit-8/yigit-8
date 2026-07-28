@@ -4,8 +4,6 @@
 
 Learning MLOps by building end to end: model training, experiment tracking, deployment, and monitoring.
 
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Live%20Demo-FFD21E?logo=huggingface&logoColor=black)](https://yliman-churn-prediction.hf.space/docs)
-
 ---
 
 ## Tech
@@ -25,7 +23,7 @@ Learning MLOps by building end to end: model training, experiment tracking, depl
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**churn-prediction**](https://github.com/yigit-8/churn-prediction) · [live demo](https://yliman-churn-prediction.hf.space/docs) | Churn API with model registry, drift + Prometheus monitoring, and Kubernetes manifests | XGBoost, MLflow, Evidently, Prometheus, Docker, K8s |
+| [**churn-prediction**](https://github.com/yigit-8/churn-prediction) | Churn API with model registry, drift + Prometheus monitoring, and Kubernetes manifests | XGBoost, MLflow, Evidently, Prometheus, Docker, K8s |
 | [**price-prediction**](https://github.com/yigit-8/price-prediction) | California house-price regression API | XGBoost, MLflow, Evidently, FastAPI, Docker |
 | [**anomaly-detection**](https://github.com/yigit-8/anomaly-detection) | Unsupervised sensor anomaly detection | IsolationForest, MLflow, Evidently, FastAPI, Docker |
 | [**airflow-ml-pipeline**](https://github.com/yigit-8/airflow-ml-pipeline) | Scheduled training pipeline with drift-triggered retraining | Airflow, MLflow, Docker Compose |
