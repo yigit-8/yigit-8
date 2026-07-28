@@ -38,4 +38,10 @@ Learning MLOps by building end to end: model training, experiment tracking, depl
 | [**gpu-scheduler**](https://github.com/yigit-8/gpu-scheduler) | Fair-share GPU cluster scheduler with EASY backfill and starvation-free job aging | Python, FastAPI, Prometheus, Grafana, Docker |
 | [**llm-inference-server**](https://github.com/yigit-8/llm-inference-server) | Continuous-batching inference server with iteration-level scheduling and TTFT/throughput metrics | PyTorch, Transformers, FastAPI, Prometheus, Docker |
 
-Every project ships with tests, a Dockerfile, and a GitHub Actions pipeline.
+### Robotics
+
+| Project | What it does | Stack |
+|---|---|---|
+| [**pepper-games**](https://github.com/yigit-8/pepper-games) | Voice games, tablet kiosk and web admin panel for a SoftBank Pepper robot, answered by a self-hosted LLM | Python, naoqi SDK, Whisper, gpt-oss-120b |
+
+Every MLOps and Infrastructure project ships with tests, a Dockerfile, and a GitHub Actions pipeline.
