@@ -2,6 +2,10 @@
 
 **AI Master's Student @ FAU · IT Specialist @ TUM**
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-yigitliman-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/yigitliman)
+[![Location](https://img.shields.io/badge/Munich-Germany-informational)](https://github.com/yigit-8)
+[![Open to work](https://img.shields.io/badge/Open%20to-opportunities-success)](https://linkedin.com/in/yigitliman)
+
 Learning MLOps by building end to end: model training, experiment tracking, deployment, and monitoring.
 
 ---
@@ -46,3 +50,10 @@ Learning MLOps by building end to end: model training, experiment tracking, depl
 | [**pepper-games**](https://github.com/yigit-8/pepper-games) | Voice games, tablet kiosk and web admin panel for a SoftBank Pepper robot, answered by a self-hosted LLM | Python, naoqi SDK, Whisper, gpt-oss-120b |
 
 Every MLOps and Infrastructure project ships with tests, a Dockerfile, and a GitHub Actions pipeline.
+
+---
+
+<p align="left">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=yigit-8&show_icons=true&hide_title=true&hide_border=true&count_private=true&theme=default" alt="Yigit's GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yigit-8&layout=compact&hide_border=true&theme=default" alt="Top languages" />
+</p>
