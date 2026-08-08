@@ -39,12 +39,6 @@ Learning MLOps by building end to end: model training, experiment tracking, depl
 | [**llm-inference-server**](https://github.com/yigit-8/llm-inference-server) | Continuous-batching inference server with iteration-level scheduling and TTFT/throughput metrics | PyTorch, Transformers, FastAPI, Prometheus, Docker |
 | [**ai-platform-lab**](https://github.com/yigit-8/ai-platform-lab) | Terraform + Kubernetes + monitoring learning lab, with remote state, a CI/CD pipeline and a Docker demo | Terraform, Kubernetes, GitHub Actions, Docker |
 
-### Tools
-
-| Project | What it does | Stack |
-|---|---|---|
-| [**cv-generator-flask**](https://github.com/yigit-8/cv-generator-flask) | Web app that tailors a CV to a job posting with an LLM and generates styled DOCX/PDF output | Flask, LLM, python-docx |
-
 ### Robotics
 
 | Project | What it does | Stack |
