@@ -2,7 +2,7 @@
 
 **AI Master's Student @ FAU · IT Specialist @ TUM**
 
-Learning Developing AI Infrastructure and MLOps.
+Learning MLOps by building end to end: model training, experiment tracking, deployment, and monitoring.
 
 ---
 
@@ -10,7 +10,7 @@ Learning Developing AI Infrastructure and MLOps.
 
 **ML:** XGBoost · PyTorch · scikit-learn · MLflow · Evidently
 **Serving:** FastAPI · Docker · Docker Compose
-**Orchestration:** Apache Airflow · Kubernetes
+**Orchestration:** Apache Airflow · Kubernetes · Terraform
 **Monitoring:** Prometheus · Grafana
 **LLM / RAG:** LangChain · ChromaDB · Anthropic Claude
 **CI/CD:** GitHub Actions · GHCR
@@ -37,6 +37,13 @@ Learning Developing AI Infrastructure and MLOps.
 |---|---|---|
 | [**gpu-scheduler**](https://github.com/yigit-8/gpu-scheduler) | Fair-share GPU cluster scheduler with EASY backfill and starvation-free job aging | Python, FastAPI, Prometheus, Grafana, Docker |
 | [**llm-inference-server**](https://github.com/yigit-8/llm-inference-server) | Continuous-batching inference server with iteration-level scheduling and TTFT/throughput metrics | PyTorch, Transformers, FastAPI, Prometheus, Docker |
+| [**ai-platform-lab**](https://github.com/yigit-8/ai-platform-lab) | Terraform + Kubernetes + monitoring learning lab, with remote state, a CI/CD pipeline and a Docker demo | Terraform, Kubernetes, GitHub Actions, Docker |
+
+### Tools
+
+| Project | What it does | Stack |
+|---|---|---|
+| [**cv-generator-flask**](https://github.com/yigit-8/cv-generator-flask) | Web app that tailors a CV to a job posting with an LLM and generates styled DOCX/PDF output | Flask, LLM, python-docx |
 
 ### Robotics
 
