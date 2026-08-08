@@ -2,7 +2,7 @@
 
 **AI Master's Student @ FAU · IT Specialist @ TUM**
 
-Learning MLOps by building end to end: model training, experiment tracking, deployment, and monitoring.
+Learning Developing AI Infrastructure and MLOps.
 
 ---
 
