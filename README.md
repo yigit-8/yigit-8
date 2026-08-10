@@ -6,7 +6,7 @@
 [![Location](https://img.shields.io/badge/Munich-Germany-informational)](https://github.com/yigitliman)
 [![Open to work](https://img.shields.io/badge/Open%20to-opportunities-success)](https://linkedin.com/in/yigitliman)
 
-Learning MLOps by building end to end: model training, experiment tracking, deployment, and monitoring.
+AI and HPC Infrastructure
 
 ---
 
