@@ -10,7 +10,7 @@
 
 Kubernetes and Terraform platforms, GPU scheduling, inference serving
 
-M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters
+M.Sc. thesis at NHR@FAU on eBPF-based NFS rate limiting for HPC clusters
 
 ---
 
