@@ -23,8 +23,7 @@ M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters
 **Monitoring:** Prometheus · Grafana
 **LLM / RAG:** LangChain · ChromaDB · Anthropic Claude
 **CI/CD:** GitHub Actions · GHCR
-
-**Currently learning:** Kubernetes · Terraform
++ Kubernetes · Terraform
 
 ---
 
