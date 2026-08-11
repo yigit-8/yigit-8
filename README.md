@@ -8,8 +8,6 @@
 
 **AI Platform & HPC Infrastructure Engineer**
 
-Kubernetes and Terraform platforms, GPU scheduling, inference serving
-
 M.Sc. thesis at NHR@FAU on eBPF-based NFS rate limiting for HPC clusters
 
 ---
