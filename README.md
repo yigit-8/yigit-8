@@ -6,8 +6,9 @@
 [![Location](https://img.shields.io/badge/Munich-Germany-informational)](https://github.com/yigitliman)
 [![Open to work](https://img.shields.io/badge/Open%20to-opportunities-success)](https://linkedin.com/in/yigitliman)
 
-GPU scheduling, inference serving and ML platform infrastructure.
-M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters.
+**AI & HPC Infrastructure Engineer**
+GPU scheduling, inference serving and ML platform infrastructure
+M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters
 
 ---
 
