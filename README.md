@@ -6,34 +6,26 @@
 [![Location](https://img.shields.io/badge/Munich-Germany-informational)](https://github.com/yigitliman)
 [![Open to work](https://img.shields.io/badge/Open%20to-opportunities-success)](https://linkedin.com/in/yigitliman)
 
-AI and HPC Infrastructure
+GPU scheduling, inference serving and ML platform infrastructure.
+M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters.
 
 ---
 
 ## Tech
 
-**ML:** XGBoost · PyTorch · scikit-learn · MLflow · Evidently
+**Core:** Python · Linux · eBPF
+**ML:** PyTorch · XGBoost · scikit-learn · MLflow · Evidently
 **Serving:** FastAPI · Docker · Docker Compose
-**Orchestration:** Apache Airflow · Kubernetes · Terraform
+**Orchestration:** Apache Airflow
 **Monitoring:** Prometheus · Grafana
 **LLM / RAG:** LangChain · ChromaDB · Anthropic Claude
 **CI/CD:** GitHub Actions · GHCR
 
+**Currently learning:** Kubernetes · Terraform
+
 ---
 
 ## Projects
-
-### MLOps
-
-| Project | What it does | Stack |
-|---|---|---|
-| [**churn-prediction**](https://github.com/yigitliman/churn-prediction) | Churn API with model registry, drift + Prometheus monitoring, and Kubernetes manifests | XGBoost, MLflow, Evidently, Prometheus, Docker, K8s |
-| [**price-prediction**](https://github.com/yigitliman/price-prediction) | California house-price regression API | XGBoost, MLflow, Evidently, FastAPI, Docker |
-| [**anomaly-detection**](https://github.com/yigitliman/anomaly-detection) | Unsupervised sensor anomaly detection | IsolationForest, MLflow, Evidently, FastAPI, Docker |
-| [**airflow-ml-pipeline**](https://github.com/yigitliman/airflow-ml-pipeline) | Scheduled training pipeline with drift-triggered retraining | Airflow, MLflow, Docker Compose |
-| [**image-classifier**](https://github.com/yigitliman/image-classifier) | CIFAR-10 CNN served over an API | PyTorch, MLflow, FastAPI, Docker |
-| [**document-qa**](https://github.com/yigitliman/document-qa) | RAG document Q&A with source citations and retrieval evaluation | LangChain, ChromaDB, Claude, FastAPI, Docker |
-| [**mlops-sentiment-pipeline**](https://github.com/yigitliman/mlops-sentiment-pipeline) | Sentiment pipeline with experiment tracking, drift detection and a two-service Compose stack | DistilBERT, MLflow, Evidently, FastAPI, Docker Compose |
 
 ### Infrastructure
 
@@ -48,5 +40,19 @@ AI and HPC Infrastructure
 | Project | What it does | Stack |
 |---|---|---|
 | [**pepper-games**](https://github.com/yigitliman/pepper-games) | Voice games, tablet kiosk and web admin panel for a SoftBank Pepper robot, answered by a self-hosted LLM | Python, naoqi SDK, Whisper, gpt-oss-120b |
+
+### MLOps
+
+A learning series on one shared stack, where each project adds a piece the previous one did not have.
+
+| Project | What it does | Stack |
+|---|---|---|
+| [**churn-prediction**](https://github.com/yigitliman/churn-prediction) | The baseline of the series: a model registry and drift detection wired into a serving API | XGBoost, MLflow, Evidently, Prometheus, Docker, K8s |
+| [**price-prediction**](https://github.com/yigitliman/price-prediction) | Same pipeline pointed at a regression target, so the metrics are errors rather than class scores | XGBoost, MLflow, Evidently, FastAPI, Docker |
+| [**anomaly-detection**](https://github.com/yigitliman/anomaly-detection) | Drops the labels entirely and scores sensor readings with an unsupervised model | IsolationForest, MLflow, Evidently, FastAPI, Docker |
+| [**airflow-ml-pipeline**](https://github.com/yigitliman/airflow-ml-pipeline) | Takes training off my machine into a scheduled DAG that retrains when drift crosses a threshold | Airflow, MLflow, Docker Compose |
+| [**image-classifier**](https://github.com/yigitliman/image-classifier) | First GPU-trained deep learning model here, a CIFAR-10 CNN behind the same API shape | PyTorch, MLflow, FastAPI, Docker |
+| [**document-qa**](https://github.com/yigitliman/document-qa) | Answers from retrieved documents instead of a trained model, and evaluates the retrieval itself | LangChain, ChromaDB, Claude, FastAPI, Docker |
+| [**mlops-sentiment-pipeline**](https://github.com/yigitliman/mlops-sentiment-pipeline) | Splits the single container into a multi-service Compose stack with a transformer doing inference | DistilBERT, MLflow, Evidently, FastAPI, Docker Compose |
 
 Every MLOps and Infrastructure project ships with tests, a Dockerfile, and a GitHub Actions pipeline.
