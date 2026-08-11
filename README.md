@@ -6,9 +6,9 @@
 [![Location](https://img.shields.io/badge/Munich-Germany-informational)](https://github.com/yigitliman)
 [![Open to work](https://img.shields.io/badge/Open%20to-opportunities-success)](https://linkedin.com/in/yigitliman)
 
-**AI & HPC Infrastructure Engineer**
+**AI Platform & HPC Infrastructure Engineer**
 
-GPU scheduling, inference serving and ML platform infrastructure
+Kubernetes and Terraform platforms, GPU scheduling, inference serving
 
 M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters
 
@@ -17,13 +17,13 @@ M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters
 ## Tech
 
 **Core:** Python · Linux · eBPF
-**ML:** PyTorch · XGBoost · scikit-learn · MLflow · Evidently
+**Platform:** Kubernetes · Terraform
 **Serving:** FastAPI · Docker · Docker Compose
 **Orchestration:** Apache Airflow
-**Monitoring:** Prometheus · Grafana
-**LLM / RAG:** LangChain · ChromaDB · Anthropic Claude
 **CI/CD:** GitHub Actions · GHCR
-+ Kubernetes · Terraform
+**Monitoring:** Prometheus · Grafana
+**ML:** PyTorch · XGBoost · scikit-learn · MLflow · Evidently
+**LLM / RAG:** LangChain · ChromaDB · Anthropic Claude
 
 ---
 
@@ -33,9 +33,9 @@ M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters
 
 | Project | What it does | Stack |
 |---|---|---|
+| [**ai-platform-lab**](https://github.com/yigitliman/ai-platform-lab) | End-to-end AI platform: Terraform-provisioned Kubernetes with remote state, monitoring and a CI/CD pipeline shipping containers to the cluster | Terraform, Kubernetes, GitHub Actions, Docker |
 | [**gpu-scheduler**](https://github.com/yigitliman/gpu-scheduler) | Fair-share GPU cluster scheduler with EASY backfill and starvation-free job aging | Python, FastAPI, Prometheus, Grafana, Docker |
 | [**llm-inference-server**](https://github.com/yigitliman/llm-inference-server) | Continuous-batching inference server with iteration-level scheduling and TTFT/throughput metrics | PyTorch, Transformers, FastAPI, Prometheus, Docker |
-| [**ai-platform-lab**](https://github.com/yigitliman/ai-platform-lab) | Terraform + Kubernetes + monitoring learning lab, with remote state, a CI/CD pipeline and a Docker demo | Terraform, Kubernetes, GitHub Actions, Docker |
 
 ### Robotics
 
@@ -45,7 +45,7 @@ M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters
 
 ### MLOps
 
-A learning series on one shared stack, where each project adds a piece the previous one did not have.
+One shared stack across the series, where each project adds a piece the previous one did not have.
 
 | Project | What it does | Stack |
 |---|---|---|
