@@ -73,7 +73,7 @@ answers from a self-hosted gpt-oss-120b. Built for teaching use at the chair.
 
 **Core:** Python · Linux · eBPF
 **Platform:** Kubernetes · Terraform · Docker · GHCR
-**Serving:** FastAPI · LiteLLM · Langfuse
+**Serving:** FastAPI · LiteLLM
 **Monitoring:** Prometheus · Grafana
 **Pipelines:** Apache Airflow · GitHub Actions · MLflow · Evidently
 **ML / LLM:** PyTorch · XGBoost · scikit-learn · LangChain · ChromaDB · Anthropic Claude
