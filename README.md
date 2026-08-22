@@ -2,7 +2,6 @@
 
 **AI Platform & Infrastructure Engineer** · IT Specialist @ TUM · M.Sc. Artificial Intelligence @ FAU
 
-[yigitlimann@gmail.com](mailto:yigitlimann@gmail.com) ·
 [Website](https://yigitliman.github.io) ·
 [LinkedIn](https://linkedin.com/in/yigitliman) ·
 Munich, Germany
