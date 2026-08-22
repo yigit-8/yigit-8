@@ -2,15 +2,13 @@
 
 **AI Platform & Infrastructure Engineer** · IT Specialist @ TUM · M.Sc. Artificial Intelligence @ FAU
 
-[yigitlimann@gmail.com](mailto:yigitlimann@gmail.com) ·
 [Website](https://yigitliman.github.io) ·
 [LinkedIn](https://linkedin.com/in/yigitliman) ·
 Munich, Germany
 
 I run the production GPU and AI infrastructure for a TUM chair: 6 GPUs, around 40-50
 researchers, a self-hosted LLM deployment and a LiteLLM gateway in front of the GPT API.
-The projects below are the same problems built from scratch, so the parts I operate at
-work are parts I have also implemented.
+The projects below are those same problems, rebuilt from scratch.
 
 M.Sc. thesis at NHR@FAU on eBPF-based NFS rate limiting for HPC clusters.
 
@@ -73,13 +71,11 @@ answers from a self-hosted gpt-oss-120b. Built for teaching use at the chair.
 ## Tech
 
 **Core:** Python · Linux · eBPF
-**Platform:** Kubernetes · Terraform · Docker
-**Serving:** FastAPI · LiteLLM · Langfuse
-**Orchestration:** Apache Airflow
-**CI/CD:** GitHub Actions · GHCR
+**Platform:** Kubernetes · Terraform · Docker · GHCR
+**Serving:** FastAPI · LiteLLM
 **Monitoring:** Prometheus · Grafana
-**ML:** PyTorch · XGBoost · scikit-learn · MLflow · Evidently
-**LLM / RAG:** LangChain · ChromaDB · Anthropic Claude
+**Pipelines:** Apache Airflow · GitHub Actions · MLflow · Evidently
+**ML / LLM:** PyTorch · XGBoost · scikit-learn · LangChain · ChromaDB · Anthropic Claude
 
 Everything under Infrastructure and MLOps ships with tests, a GitHub Actions pipeline and
 a container it runs in.
