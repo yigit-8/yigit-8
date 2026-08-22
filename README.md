@@ -1,60 +1,85 @@
 # Yigit Liman
 
-**AI Master's Student @ FAU · IT Specialist @ TUM**
+**AI Platform & Infrastructure Engineer** · IT Specialist @ TUM · M.Sc. Artificial Intelligence @ FAU
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-yigitliman-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/yigitliman)
-[![Location](https://img.shields.io/badge/Munich-Germany-informational)](https://github.com/yigitliman)
-[![Open to work](https://img.shields.io/badge/Open%20to-opportunities-success)](https://linkedin.com/in/yigitliman)
+[yigitlimann@gmail.com](mailto:yigitlimann@gmail.com) ·
+[Website](https://yigitliman.github.io) ·
+[LinkedIn](https://linkedin.com/in/yigitliman) ·
+Munich, Germany
 
-**AI Platform & HPC Infrastructure Engineer**
+I run the production GPU and AI infrastructure for a TUM chair: 6 GPUs, around 40-50
+researchers, a self-hosted LLM deployment and a LiteLLM gateway in front of the GPT API.
+The projects below are the same problems built from scratch, so the parts I operate at
+work are parts I have also implemented.
 
-Kubernetes and Terraform platforms, GPU scheduling, inference serving
+M.Sc. thesis at NHR@FAU on eBPF-based NFS rate limiting for HPC clusters.
 
-M.Sc. thesis at NHR@FAU on eBPF-based NFS I/O rate limiting for HPC clusters
+---
+
+## Infrastructure
+
+**[gpu-scheduler](https://github.com/yigitliman/gpu-scheduler)** ·
+`Python` `FastAPI` `Prometheus` `Grafana` `Docker`
+
+Fair-share scheduler for a shared GPU cluster: Slurm-style usage decay, job aging so
+nothing starves, and EASY backfill. This is the formal version of the job queueing and
+fair-use allocation I built for the cluster at TUM. On a seeded 400-job simulation over
+8 GPUs, backfill takes utilisation from 89.5% to 99.5% and cuts mean queue wait by 20%.
+
+**[llm-inference-server](https://github.com/yigitliman/llm-inference-server)** ·
+`PyTorch` `Transformers` `FastAPI` `Prometheus` `Docker`
+
+Continuous-batching inference server with iteration-level scheduling and KV-cache
+bookkeeping, written against Hugging Face transformers rather than delegating to vLLM.
+4.16x throughput at batch 16 versus sequential decoding, with inter-token latency going
+from 19ms to 68ms. Batched output is byte-identical to a sequential baseline.
+
+**[ai-platform-lab](https://github.com/yigitliman/ai-platform-lab)** ·
+`Terraform` `Kubernetes` `LiteLLM` `Prometheus` `Grafana`
+
+A LiteLLM gateway with master-key auth and rate limits in front of a local model,
+Terraform for the AWS side with remote state and locking, a non-root service on
+Kubernetes with probes, and Prometheus scraping both.
+
+---
+
+## MLOps
+
+| Project | What it does | Stack |
+|---|---|---|
+| [**churn-prediction**](https://github.com/yigitliman/churn-prediction) | MLflow registry with alias promotion, Evidently drift checks, Prometheus metrics, K8s manifests with probes and an HPA | XGBoost, MLflow, Evidently, K8s |
+| [**airflow-ml-pipeline**](https://github.com/yigitliman/airflow-ml-pipeline) | Scheduled retraining DAG with per-run artifact isolation and a ROC-AUC gate that fails the run instead of shipping a worse model | Airflow, MLflow, Docker Compose |
+| [**document-qa**](https://github.com/yigitliman/document-qa) | RAG where retrieval itself is evaluated against a golden set, enforced in CI | LangChain, ChromaDB, Claude, FastAPI |
+
+Same stack, different targets:
+[price-prediction](https://github.com/yigitliman/price-prediction) (regression) ·
+[anomaly-detection](https://github.com/yigitliman/anomaly-detection) (unsupervised) ·
+[image-classifier](https://github.com/yigitliman/image-classifier) (PyTorch CNN) ·
+[mlops-sentiment-pipeline](https://github.com/yigitliman/mlops-sentiment-pipeline) (multi-service Compose) ·
+[ai-sentiment-api](https://github.com/yigitliman/ai-sentiment-api)
+([live](https://yliman-ai-sentiment-api.hf.space))
+
+---
+
+## Robotics
+
+**[pepper-games](https://github.com/yigitliman/pepper-games)** · `Python` `naoqi SDK` `Whisper`
+
+Voice games, a tablet kiosk and a web admin panel for a SoftBank Pepper robot, with
+answers from a self-hosted gpt-oss-120b. Built for teaching use at the chair.
 
 ---
 
 ## Tech
 
 **Core:** Python · Linux · eBPF
-**Platform:** Kubernetes · Terraform
-**Serving:** FastAPI · Docker · Docker Compose
+**Platform:** Kubernetes · Terraform · Docker
+**Serving:** FastAPI · LiteLLM · Langfuse
 **Orchestration:** Apache Airflow
 **CI/CD:** GitHub Actions · GHCR
 **Monitoring:** Prometheus · Grafana
 **ML:** PyTorch · XGBoost · scikit-learn · MLflow · Evidently
 **LLM / RAG:** LangChain · ChromaDB · Anthropic Claude
 
----
-
-## Projects
-
-### Infrastructure
-
-| Project | What it does | Stack |
-|---|---|---|
-| [**ai-platform-lab**](https://github.com/yigitliman/ai-platform-lab) | End-to-end AI platform: Terraform-provisioned Kubernetes with remote state, monitoring and a CI/CD pipeline shipping containers to the cluster | Terraform, Kubernetes, GitHub Actions, Docker |
-| [**gpu-scheduler**](https://github.com/yigitliman/gpu-scheduler) | Fair-share GPU cluster scheduler with EASY backfill and starvation-free job aging | Python, FastAPI, Prometheus, Grafana, Docker |
-| [**llm-inference-server**](https://github.com/yigitliman/llm-inference-server) | Continuous-batching inference server with iteration-level scheduling and TTFT/throughput metrics | PyTorch, Transformers, FastAPI, Prometheus, Docker |
-
-### Robotics
-
-| Project | What it does | Stack |
-|---|---|---|
-| [**pepper-games**](https://github.com/yigitliman/pepper-games) | Voice games, tablet kiosk and web admin panel for a SoftBank Pepper robot, answered by a self-hosted LLM | Python, naoqi SDK, Whisper, gpt-oss-120b |
-
-### MLOps
-
-One shared stack across the series, where each project adds a piece the previous one did not have.
-
-| Project | What it does | Stack |
-|---|---|---|
-| [**churn-prediction**](https://github.com/yigitliman/churn-prediction) | The baseline of the series: a model registry and drift detection wired into a serving API | XGBoost, MLflow, Evidently, Prometheus, Docker, K8s |
-| [**price-prediction**](https://github.com/yigitliman/price-prediction) | Same pipeline pointed at a regression target, so the metrics are errors rather than class scores | XGBoost, MLflow, Evidently, FastAPI, Docker |
-| [**anomaly-detection**](https://github.com/yigitliman/anomaly-detection) | Drops the labels entirely and scores sensor readings with an unsupervised model | IsolationForest, MLflow, Evidently, FastAPI, Docker |
-| [**airflow-ml-pipeline**](https://github.com/yigitliman/airflow-ml-pipeline) | Takes training off my machine into a scheduled DAG that retrains when drift crosses a threshold | Airflow, MLflow, Docker Compose |
-| [**image-classifier**](https://github.com/yigitliman/image-classifier) | First GPU-trained deep learning model here, a CIFAR-10 CNN behind the same API shape | PyTorch, MLflow, FastAPI, Docker |
-| [**document-qa**](https://github.com/yigitliman/document-qa) | Answers from retrieved documents instead of a trained model, and evaluates the retrieval itself | LangChain, ChromaDB, Claude, FastAPI, Docker |
-| [**mlops-sentiment-pipeline**](https://github.com/yigitliman/mlops-sentiment-pipeline) | Splits the single container into a multi-service Compose stack with a transformer doing inference | DistilBERT, MLflow, Evidently, FastAPI, Docker Compose |
-
-Every MLOps and Infrastructure project ships with tests, a Dockerfile, and a GitHub Actions pipeline.
+Everything under Infrastructure and MLOps ships with tests, a GitHub Actions pipeline and
+a container it runs in.
