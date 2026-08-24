@@ -6,10 +6,6 @@
 [LinkedIn](https://linkedin.com/in/yigitliman) ·
 Munich, Germany
 
-I run the production GPU and AI infrastructure for a TUM chair: 6 GPUs, around 40-50
-researchers, a self-hosted LLM deployment and a LiteLLM gateway in front of the GPT API.
-The projects below are those same problems, rebuilt from scratch.
-
 M.Sc. thesis at NHR@FAU on eBPF-based NFS rate limiting for HPC clusters.
 
 ---
